@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "uniswap-ai",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/uniswap-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://uniswap-ai.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://uniswap-ai.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "qdvofwhfoq",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Uniswap - Trade Crypto on DeFi",
+        "meta_descr": "Uniswap is a leading decentralized exchange on Ethereum, using automated market makers to enable permissionless crypto trading and liquidity provision.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://app.uniswap.org/\"><img src=\"@PROJECT_PATH@/assets/images/uniswap.png\" alt=\"uniswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vcv7Hw93pC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>- Trade Crypto on DeFi</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>Labs and the Rise of Uniswap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Uniswap is one of the most influential decentralized finance (DeFi) protocols in the cryptocurrency ecosystem. Built on the Ethereum blockchain, it enables users to trade digital assets directly from their wallets without relying on centralized intermediaries. Since its launch in 2018, Uniswap has reshaped how people think about trading, liquidity, and financial infrastructure.<br><br><b>Origins and Vision<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>was created by Hayden Adams, inspired by a concept proposed by Vitalik Buterin. The idea was simple yet revolutionary: allow users to swap tokens using automated smart contracts instead of traditional order books.<br><br>The protocol is open-source and governed in part by holders of its native token, UNI, which was introduced in 2020. Governance allows the community to vote on proposals related to protocol upgrades, fee structures, and treasury allocations.<br><br><b>How <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>Works: Automated Market Makers (AMMs)<br></b>Unlike centralized exchanges that match buyers and sellers through order books, Uniswap uses an <b>Automated Market Maker (AMM)</b> model.<br><br>Here’s how it works:<br><br>. Users provide liquidity by depositing token pairs (e.g., ETH/USDC) into liquidity pools.<br>. Prices are determined algorithmically using a constant product formula:<br><b>x × y = k</b><br>. Traders swap tokens directly against these liquidity pools.<br>. Liquidity providers earn a portion of the trading fees.<br><br>This innovation eliminated the need for traditional market makers and allowed anyone to become a liquidity provider.<br><br><b>Key Versions and Innovations<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>has evolved through several major upgrades:<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>v1 (2018)<br></b>. Enabled ETH-to-ERC-20 token swaps.<br>. Introduced the core AMM model.<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>v2 (2020)<br></b>. Allowed direct ERC-20 to ERC-20 swaps.<br>. Improved price oracles and flash swaps.<br><br><b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>v3 (2021)<br></b>. Introduced <b>concentrated liquidity</b>, enabling providers to allocate capital within specific price ranges.<br>. Improved capital efficiency significantly.<br>. Represented liquidity positions as NFTs.<br><br>These upgrades helped Uniswap maintain its position as one of the leading decentralized exchanges by trading volume.<br><br><b>Advantages of <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap</a><br></b><br><b>1. Decentralization</b> – No central authority controls trades.<br><b>2. Permissionless Access</b> – Anyone with a compatible wallet can trade.<br><b>3. Self-Custody</b> – Users retain control of their funds.<br><b>4. Transparency</b> – All transactions are recorded on the Ethereum blockchain.<br><br><b>Risks and Challenges<br></b>Despite its innovation, Uniswap is not without risks:<br><br><b>. Impermanent Loss</b> for liquidity providers.<br><b>. Smart Contract Vulnerabilities</b>, although audits reduce this risk.<br><b>. High Gas Fees</b> during periods of Ethereum network congestion.<br>. Regulatory uncertainty surrounding DeFi platforms.<br><br><b>Impact on DeFi<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>played a foundational role in the “DeFi Summer” of 2020, inspiring countless AMM-based exchanges across multiple blockchains. It demonstrated that decentralized exchanges could compete with centralized platforms in both liquidity and user adoption.<br><br>Today, <a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>operates not only on Ethereum mainnet but also on Layer 2 networks to reduce transaction costs and improve speed.<br><br><b>Conclusion<br></b><a href=\"https://app.uniswap.org/\" class=\"text-primary\">Uniswap </a>represents a major milestone in decentralized finance. By replacing order books with algorithmic liquidity pools, it introduced a new trading paradigm that empowers users globally. As blockchain technology evolves, Uniswap continues to innovate at the intersection of finance, governance, and decentralization—remaining a cornerstone of the DeFi ecosystem.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vcv7Ix4fhV",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
